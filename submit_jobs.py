@@ -2,23 +2,13 @@ import os
 import subprocess
 import time
 
+from utils import gather_names
 
 
 def main():
     names = gather_names("./init_mols/")
     for name in names:
         submit_job(name)
-
-
-def gather_names(dirpath):
-    """ Gets all names of the molecules from the input molecule folder """
-    
-    all_names = list()
-    for file in os.listdir(dirpath):
-        if file.endswith(".xyz"):
-            all_names.append(file[:-4])
-
-    return all_names
 
 
 def submit_job(name):
