@@ -104,7 +104,7 @@ def gather_molecules(dirpath):
 # Set variables for Q-Chem job
 rem = {
         'job_type':'opt',
-        'basis': 'def2-svpd',
+        'basis': 'def2-tzvppd',
         'max_scf_cycles': 100,
         'gen_scfman': 'true',
         'xc_grid': 3,
