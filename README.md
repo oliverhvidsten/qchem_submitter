@@ -7,6 +7,7 @@ This code contains three elements of functionality: input creation, slurm submis
 ### Pre-use Setup
 - create a folder called `./init_mols`
 - save all xyz files to be optimized in this folder
+- create a file named `charge.json` in this folder that maps filenames to associated charges
 
 ### Step 1:
 Run `python create_optimization_inputs.py <hpc name>`\
