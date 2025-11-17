@@ -67,7 +67,7 @@ def submit_script(name, system_name):
             "#SBATCH --nodes=1",
             "#SBATCH --qos=condo_mp_lr6",
             "#SBATCH --partition=lr6",
-            "#SBATCH --account=silimorphous",
+            "#SBATCH --account=lr_mp",
             "#SBATCH --job-name=geom_opt",
             "#SBATCH --output=FW_job-%j.out",
             "#SBATCH --error=FW_job-%j.error",
